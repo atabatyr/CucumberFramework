@@ -1,0 +1,494 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9696000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the google page",
+            "match": {
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-13T21:51:56.333Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "TC01 Verify iphone search",
+        "description": "",
+        "id": "us1000-google-search-test;tc01-verify-iphone-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2280000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7810000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user search for \"iphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "verify the result has \"iphone\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7451000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the google page",
+            "match": {
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-13T21:52:16.187Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "TC02 Verify tea pot search",
+        "description": "",
+        "id": "us1000-google-search-test;tc02-verify-tea-pot-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2065000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5898000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user search for \"tea pot\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tea pot\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify the result has \"tea pot\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tea pot\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3574000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the google page",
+            "match": {
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-13T21:52:31.706Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "TC03 Verify flower search",
+        "description": "",
+        "id": "us1000-google-search-test;tc03-verify-flower-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2255000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2094000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user search for \"flower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "verify the result has \"flower\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"flower\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4455000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the google page",
+            "match": {
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-13T21:52:39.656Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "TC04 Verify bmw search",
+        "description": "",
+        "id": "us1000-google-search-test;tc04-verify-bmw-search",
+        "after": [
+          {
+            "result": {
+              "duration": 1325000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2521000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user search for \"bmw\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bmw\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "verify the result has \"bmw\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bmw\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5866000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on the google page",
+            "match": {
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-13T21:52:47.981Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "TC05Verify bmw search",
+        "description": "",
+        "id": "us1000-google-search-test;tc05verify-bmw-search",
+        "after": [
+          {
+            "result": {
+              "duration": 2279000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4813000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user search for \"mercedes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mercedes\"",
+                  "offset": 16
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "verify the result has \"mercedes\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mercedes\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "US1000 Google search test",
+    "description": "",
+    "id": "us1000-google-search-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US1000%20Google%20search%20test.feature",
+    "tags": [
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

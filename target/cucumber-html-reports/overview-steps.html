@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>13 Feb 2021, 15:53</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">database_stepdefinition.DBCreate_StepDefinitions.create_a_new_hotel_with_the_new_data()</td>
+              <td>1</td>
+              <td class="duration" data-value="75000000">0.075</td>
+              <td class="duration" data-value="75000000">0.075</td>
+              <td class="duration" data-value="75000000">0.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBCreate_StepDefinitions.verify_if_the_hotel_is_created()</td>
+              <td>1</td>
+              <td class="duration" data-value="779000000">0.779</td>
+              <td class="duration" data-value="779000000">0.779</td>
+              <td class="duration" data-value="779000000">0.779</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBRead.user_connects_to_the_database()</td>
+              <td>1</td>
+              <td class="duration" data-value="314000000">0.314</td>
+              <td class="duration" data-value="314000000">0.314</td>
+              <td class="duration" data-value="314000000">0.314</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBRead.user_gets_the_table(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="40000000">0.040</td>
+              <td class="duration" data-value="40000000">0.040</td>
+              <td class="duration" data-value="40000000">0.040</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBRead.user_gets_the_value_in_row_in_column_and_verifies_the_value_is(java.lang.Integer,java.lang.String,java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="39666666">0.039</td>
+              <td class="duration" data-value="39666666">0.072</td>
+              <td class="duration" data-value="119000000">0.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBRead.user_reads_all_rows_in_the_column(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="203000000">0.203</td>
+              <td class="duration" data-value="203000000">0.203</td>
+              <td class="duration" data-value="203000000">0.203</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBUpdate_StepDefinitions.user_connects_to_the_applicatiton_database()</td>
+              <td>2</td>
+              <td class="duration" data-value="1559500000">1.559</td>
+              <td class="duration" data-value="1559500000">2.524</td>
+              <td class="duration" data-value="3119000000">3.119</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">database_stepdefinition.DBUpdate_StepDefinitions.user_updates_Email_as_when_IDHotel_is(java.lang.String,java.lang.Integer)</td>
+              <td>1</td>
+              <td class="duration" data-value="20576000000">20.576</td>
+              <td class="duration" data-value="20576000000">20.576</td>
+              <td class="duration" data-value="20576000000">20.576</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.search_for_the_firstname()</td>
+              <td>1</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="duration" data-value="1308000000">1.308</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.search_for_the_firstname(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="470714285">0.470</td>
+              <td class="duration" data-value="470714285">1.934</td>
+              <td class="duration" data-value="3295000000">3.295</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_clicks_on_the_create_button()</td>
+              <td>8</td>
+              <td class="duration" data-value="282250000">0.282</td>
+              <td class="duration" data-value="282250000">0.818</td>
+              <td class="duration" data-value="2258000000">2.258</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_clicks_on_the_new_button()</td>
+              <td>8</td>
+              <td class="duration" data-value="402125000">0.402</td>
+              <td class="duration" data-value="402125000">0.621</td>
+              <td class="duration" data-value="3217000000">3.217</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_extension()</td>
+              <td>1</td>
+              <td class="duration" data-value="916000000">0.916</td>
+              <td class="duration" data-value="916000000">0.916</td>
+              <td class="duration" data-value="916000000">0.916</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_extension(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="130285714">0.130</td>
+              <td class="duration" data-value="130285714">0.239</td>
+              <td class="duration" data-value="912000000">0.912</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_firstname()</td>
+              <td>1</td>
+              <td class="duration" data-value="445000000">0.445</td>
+              <td class="duration" data-value="445000000">0.445</td>
+              <td class="duration" data-value="445000000">0.445</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_firstname(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="411428571">0.411</td>
+              <td class="duration" data-value="411428571">1.035</td>
+              <td class="duration" data-value="2880000000">2.880</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_lastname()</td>
+              <td>1</td>
+              <td class="duration" data-value="125000000">0.125</td>
+              <td class="duration" data-value="125000000">0.125</td>
+              <td class="duration" data-value="125000000">0.125</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_lastname(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="335714285">0.335</td>
+              <td class="duration" data-value="335714285">0.598</td>
+              <td class="duration" data-value="2350000000">2.350</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_office()</td>
+              <td>1</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="duration" data-value="391000000">0.391</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_office(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="151142857">0.151</td>
+              <td class="duration" data-value="151142857">0.262</td>
+              <td class="duration" data-value="1058000000">1.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_position()</td>
+              <td>1</td>
+              <td class="duration" data-value="178000000">0.178</td>
+              <td class="duration" data-value="178000000">0.178</td>
+              <td class="duration" data-value="178000000">0.178</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_position(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="263571428">0.263</td>
+              <td class="duration" data-value="263571428">0.975</td>
+              <td class="duration" data-value="1845000000">1.845</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_salary()</td>
+              <td>1</td>
+              <td class="duration" data-value="428000000">0.428</td>
+              <td class="duration" data-value="428000000">0.428</td>
+              <td class="duration" data-value="428000000">0.428</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_salary(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="259714285">0.259</td>
+              <td class="duration" data-value="259714285">1.137</td>
+              <td class="duration" data-value="1818000000">1.818</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_startdate()</td>
+              <td>1</td>
+              <td class="duration" data-value="533000000">0.533</td>
+              <td class="duration" data-value="533000000">0.533</td>
+              <td class="duration" data-value="533000000">0.533</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_enters_the_startdate(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="369428571">0.369</td>
+              <td class="duration" data-value="369428571">0.674</td>
+              <td class="duration" data-value="2586000000">2.586</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.user_is_on_the_datatables_page()</td>
+              <td>8</td>
+              <td class="duration" data-value="6907875000">6.907</td>
+              <td class="duration" data-value="6907875000">12.186</td>
+              <td class="duration" data-value="55263000000">55.263</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.verify_the_name_fields_contains_firstname()</td>
+              <td>1</td>
+              <td class="duration" data-value="1011000000">1.011</td>
+              <td class="duration" data-value="1011000000">1.011</td>
+              <td class="duration" data-value="1011000000">1.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.DataTablesStepDefinitions.verify_the_name_fields_contains_firstname(java.lang.String)</td>
+              <td>7</td>
+              <td class="duration" data-value="5069571428">5.069</td>
+              <td class="duration" data-value="5069571428">5.120</td>
+              <td class="duration" data-value="35487000000">35.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.GoogleSearchStepDefinitions.user_is_on_the_google_page()</td>
+              <td>5</td>
+              <td class="duration" data-value="6208400000">6.208</td>
+              <td class="duration" data-value="6208400000">9.696</td>
+              <td class="duration" data-value="31042000000">31.042</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.GoogleSearchStepDefinitions.user_search_for(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="4627200000">4.627</td>
+              <td class="duration" data-value="4627200000">7.810</td>
+              <td class="duration" data-value="23136000000">23.136</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.GoogleSearchStepDefinitions.verify_the_result_has(java.lang.String)</td>
+              <td>5</td>
+              <td class="duration" data-value="42600000">0.042</td>
+              <td class="duration" data-value="42600000">0.094</td>
+              <td class="duration" data-value="213000000">0.213</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.setUp()</td>
+              <td>13</td>
+              <td class="duration" data-value="384615">0.000</td>
+              <td class="duration" data-value="384615">0.003</td>
+              <td class="duration" data-value="5000000">0.005</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>13</td>
+              <td class="duration" data-value="2105153846">2.105</td>
+              <td class="duration" data-value="2105153846">4.455</td>
+              <td class="duration" data-value="27367000000">27.367</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>34</td>
+            <td>148</td>
+            <td class="duration">1.522</td>
+            <td class="duration">55.263</td>
+            <td class="duration">3:45.292</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

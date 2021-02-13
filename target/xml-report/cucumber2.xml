@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="116.298">
+<testcase classname="US1002_user_should_add_data_with_parameters" name="TC01_Testing_the_data_tables_web_page" time="24.222">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "Bat"........................................passed
+When user enters the lastname "Ata".........................................passed
+When user enters the position "Developer"...................................passed
+When user enters the office "GOOGLE"........................................passed
+When user enters the extension "CEO"........................................passed
+When user enters the startdate "2020-10-12".................................passed
+When user enters the salary "64000".........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "Bat"..........................................passed
+Then verify the name fields contains firstname "Bat"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1002_user_should_add_data_with_parameters" name="TC03_Testing_the_data_tables_web_page" time="22.637">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "fakeFirst1".................................passed
+When user enters the lastname "fakeLast1"...................................passed
+When user enters the position "Developer1"..................................passed
+When user enters the office "Microsoft1"....................................passed
+When user enters the extension "CEO1".......................................passed
+When user enters the startdate "2020-11-11".................................passed
+When user enters the salary "2500001".......................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "fakeFirst1"...................................passed
+Then verify the name fields contains firstname "fakeFirst1".................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_user_should_add_data_scenario_outline" name="TC01_Testing_the_data_tables_web_page" time="19.294">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "Batyr"......................................passed
+When user enters the lastname "Ata".........................................passed
+When user enters the position "doctor"......................................passed
+When user enters the office "TX"............................................passed
+When user enters the extension "456"........................................passed
+When user enters the startdate "2020-10-12".................................passed
+When user enters the salary "125000"........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "Batyr"........................................passed
+Then verify the name fields contains firstname "Batyr"......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_user_should_add_data_scenario_outline" name="TC01_Testing_the_data_tables_web_page_2" time="13.337">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "Ata"........................................passed
+When user enters the lastname "Bat".........................................passed
+When user enters the position "teacher".....................................passed
+When user enters the office "CA"............................................passed
+When user enters the extension "457"........................................passed
+When user enters the startdate "2020-11-11".................................passed
+When user enters the salary "120000"........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "Ata"..........................................passed
+Then verify the name fields contains firstname "Ata"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_user_should_add_data_scenario_outline" name="TC01_Testing_the_data_tables_web_page_3" time="11.258">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "John".......................................passed
+When user enters the lastname "Travolta"....................................passed
+When user enters the position "TA"..........................................passed
+When user enters the office "LA"............................................passed
+When user enters the extension "455"........................................passed
+When user enters the startdate "2020-09-09".................................passed
+When user enters the salary "123000"........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "John".........................................passed
+Then verify the name fields contains firstname "John".......................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_user_should_add_data_scenario_outline" name="TC01_Testing_the_data_tables_web_page_4" time="11.431">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "Kidman".....................................passed
+When user enters the lastname "Arnold"......................................passed
+When user enters the position "developer"...................................passed
+When user enters the office "NY"............................................passed
+When user enters the extension "478"........................................passed
+When user enters the startdate "2020-07-10".................................passed
+When user enters the salary "122000"........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "Kidman".......................................passed
+Then verify the name fields contains firstname "Kidman".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="US1003_user_should_add_data_scenario_outline" name="TC01_Testing_the_data_tables_web_page_5" time="12.892">
+<system-out><![CDATA[Given user is on the datatables page........................................passed
+And user clicks on the new button...........................................passed
+When user enters the firstname "Nicole".....................................passed
+When user enters the lastname "Jane"........................................passed
+When user enters the position "Assistant"...................................passed
+When user enters the office "OH"............................................passed
+When user enters the extension "452"........................................passed
+When user enters the startdate "2020-05-12".................................passed
+When user enters the salary "120000"........................................passed
+And user clicks on the create button........................................passed
+And search for the firstname "Nicole".......................................passed
+Then verify the name fields contains firstname "Nicole".....................passed
+]]></system-out>
+</testcase>
+</testsuite>

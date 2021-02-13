@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="26.202">
+<testcase classname="Create Data" name="Creating new Hotel" time="3.383">
+<system-out><![CDATA[Given user connects to the applicatiton database............................passed
+And create a new hotel with the new data....................................passed
+Then verify if the hotel is created.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Read Data" name="Reading Hotel Reservations" time="0.676">
+<system-out><![CDATA[Given user connects to the database.........................................passed
+And user gets "Name" the "Hotel" table......................................passed
+And user reads all rows in the "Name" column................................passed
+And user gets the value in row 15 in "Name" column and verifies the value is "LILLE".passed
+And user gets the value in row 1 in "Name" column and verifies the value is "Rodisson Demo".passed
+And user gets the value in row 10 in "Name" column and verifies the value is "SUNSET".passed
+]]></system-out>
+</testcase>
+<testcase classname="Update Hotel Data" name="Update hotels" time="21.171">
+<system-out><![CDATA[Given user connects to the applicatiton database............................passed
+And user updates Email as "atab@update.com" when IDHotel is 10..............passed
+]]></system-out>
+</testcase>
+</testsuite>
